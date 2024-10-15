@@ -1,0 +1,13 @@
+spring:
+  profiles:
+    default: dev
+  datasource:
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: validate
+  kafka:
+    bootstrap-servers: localhost:9092
+    producer:
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+  scheduled-cron: 0 0 0 * * * # 24 hours
