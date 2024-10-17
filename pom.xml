@@ -10,7 +10,7 @@
     </parent>
     <groupId>com.dietrying</groupId>
     <artifactId>scheduler</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>0.0.1</version>
     <name>scheduler</name>
     <description>scheduler</description>
     <url/>
