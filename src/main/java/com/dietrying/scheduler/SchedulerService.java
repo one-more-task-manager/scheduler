@@ -14,7 +14,6 @@ import java.util.List;
 @AllArgsConstructor
 @Service
 public class SchedulerService {
-
     private final UserRepository userRepository;
     private final KafkaTemplate<String, Report> kafkaTemplate;
 
@@ -32,7 +31,6 @@ public class SchedulerService {
             this.kafkaTemplate.send("EMAIL_SENDING_TASKS", report);
         }
     }
-
 
     private boolean completedWithin(int hours, UserTask task) {
         return task.getIsDone() && this.statusChangedWithin(hours, task);

@@ -8,7 +8,6 @@ import java.util.List;
 
 @UtilityClass
 public class ReportFactory {
-
     public Report form(List<UserTask> uncompleted, List<UserTask> completedWithin24Hours, String email) {
         if (!uncompleted.isEmpty() && !completedWithin24Hours.isEmpty()) {
             return new Report(
