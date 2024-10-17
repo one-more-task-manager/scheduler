@@ -5,3 +5,4 @@ spring:
     password: password
   jpa:
     show-sql: true
+  scheduled-cron: 0 0 */6 * * *  # 6 hours
