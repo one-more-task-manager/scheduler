@@ -1,6 +1,6 @@
 spring:
   datasource:
-    url: jdbc:postgresql://${POSTGRES_HOST}:${POSTGRES_PORT}/${POSTGRES_DB}
+    url: jdbc:postgresql://postgres:5432/one-more-task-manager-db
     username: ${POSTGRES_USERNAME}
     password: ${POSTGRES_PASSWORD}
   scheduled-cron: 0 0 0 * * * # 24 hours
