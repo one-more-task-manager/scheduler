@@ -1,4 +1,4 @@
-name: build docker image on PR to dev
+name: Build docker image on PR to dev
 
 on:
   pull_request:
@@ -20,3 +20,6 @@ jobs:
         with:
           context: .
           push: false
+
+
+
